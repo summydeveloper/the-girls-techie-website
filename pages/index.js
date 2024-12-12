@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CountUp from "react-countup";
 import Link from "next/link";
+import Image from "next/image"; // Import Image from next/image
 
 export default function Home() {
   return (
@@ -75,10 +76,12 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-3 gap-8">
             {/* Image 1 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/image.jpg"
                 alt="Girls in Tech"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                width={500} // Add width
+                height={300} // Add height
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-2xl font-semibold">
@@ -88,10 +91,12 @@ export default function Home() {
             </div>
             {/* Image 2 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/image.jpg"
                 alt="Coding Workshop"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                width={500}
+                height={300}
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-2xl font-semibold">
@@ -101,10 +106,12 @@ export default function Home() {
             </div>
             {/* Image 3 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/image.jpg"
                 alt="Tech Event"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                width={500}
+                height={300}
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-2xl font-semibold">
@@ -114,10 +121,12 @@ export default function Home() {
             </div>
             {/* Image 4 */}
             <div className="group relative overflow-hidden rounded-lg shadow-lg">
-              <img
+              <Image
                 src="/images/image.jpg"
                 alt="Coding Bootcamp"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                width={500}
+                height={300}
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 group-hover:bg-opacity-60 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-2xl font-semibold">
@@ -177,10 +186,12 @@ export default function Home() {
                 reach your goals, and build lifelong relationships.
               </p>
               <div className="mb-6">
-                <img
+                <Image
                   src="/images/image.jpg"
                   alt="Community Image"
                   className="w-full h-[300px] object-cover rounded-lg shadow-md"
+                  width={500}
+                  height={300}
                 />
               </div>
               <Link
@@ -198,14 +209,16 @@ export default function Home() {
               </h3>
               <p className="text-xl text-[#4B4B4B] mb-6">
                 Get free access to events focused on empowering and getting more young
-                girls into tech across Africa. View our upcoming events so you don't
+                girls into tech across Africa. View our upcoming events so you don&apos;t
                 miss the one curated to match your technical skill or passion.
               </p>
               <div className="mb-6">
-                <img
+                <Image
                   src="/images/image.jpg"
                   alt="Event Image"
                   className="w-full h-[300px] object-cover rounded-lg shadow-md"
+                  width={500}
+                  height={300}
                 />
               </div>
               <Link
