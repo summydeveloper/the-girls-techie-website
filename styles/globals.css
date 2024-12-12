@@ -1,0 +1,106 @@
+/* styles/globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+  
+
+/* Keyframe for sliding the links in */
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Staggered Slide-In Animation for Desktop Nav */
+  .link-item {
+    opacity: 0;
+    animation: slideInFromRight 0.5s ease-out forwards;
+  }
+  
+  .link-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  
+  .link-item:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .link-item:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  
+  .link-item:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  
+  /* Bounce Animation for Hover Effect */
+  .nav-link:hover {
+    animation: bounce 0.5s ease-in-out forwards;
+  }
+  
+  /* Bounce Keyframes */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    70% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  /* Smooth Text Color Change */
+  .nav-link {
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #004F6D; /* Change to a darker blue color */
+  }
+  
+  /* Keyframe for overlay fade-in */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Add the animation to the overlay */
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-in-out forwards;
+  }
+  
+  /* Keyframe for Sidebar Slide-In from Right */
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+    }
+    60% {
+      transform: translateX(-20%);
+    }
+    80% {
+      transform: translateX(10%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-slideInRight {
+    animation: slideInRight 0.5s ease-out forwards;
+  }
+  
