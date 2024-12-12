@@ -1,4 +1,5 @@
-import { useState } from 'react';
+// import { useState } from 'react';
+import Link from 'next/link';  // Import Link from next/link
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,24 +18,32 @@ const Header = () => {
         <nav className="hidden md:flex space-x-6 text-white font-semibold">
           <ul className="flex space-x-6">
             <li>
-              <a href="/" className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
-                Home
-              </a>
+              <Link href="/" passHref>
+                <a className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
+                  Home
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
-                About Us
-              </a>
+              <Link href="/about" passHref>
+                <a className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
+                  About Us
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/donate" className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
-                Donate
-              </a>
+              <Link href="/donate" passHref>
+                <a className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
+                  Donate
+                </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
-                Contact
-              </a>
+              <Link href="/contact" passHref>
+                <a className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
+                  Contact
+                </a>
+              </Link>
             </li>
           </ul>
         </nav>
@@ -63,18 +72,26 @@ const Header = () => {
 
               {/* Navigation Links */}
               <div className="flex flex-col space-y-6">
-                <a href="/" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
-                  Home
-                </a>
-                <a href="/about" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
-                  About Us
-                </a>
-                <a href="/donate" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
-                  Donate
-                </a>
-                <a href="/contact" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
-                  Contact
-                </a>
+                <Link href="/" passHref>
+                  <a className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
+                    Home
+                  </a>
+                </Link>
+                <Link href="/about" passHref>
+                  <a className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
+                    About Us
+                  </a>
+                </Link>
+                <Link href="/donate" passHref>
+                  <a className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
+                    Donate
+                  </a>
+                </Link>
+                <Link href="/contact" passHref>
+                  <a className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
+                    Contact
+                  </a>
+                </Link>
               </div>
             </div>
           )}
