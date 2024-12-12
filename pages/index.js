@@ -233,27 +233,28 @@ export default function Home() {
       </section>
 
         {/* Newsletter Section */}
-        <section className="bg-[#f1f1f1] py-20">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#89cff0] -500 mb-4">TGT Newsletter</h2>
-          <p className="text-xl mb-8">Subscribe to our Newsletter today to stay updated with the latest technology news.</p>
-          
-          <form className="flex justify-center items-center space-x-4 max-w-2xl mx-auto">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="px-4 py-2 text-lg border border-[#89CFF0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#89CFF0] w-64"
-              required
-            />
-            <button
-              type="submit"
-              className="bg-[#89CFF0] text-white text-lg py-2 px-6 rounded-lg hover:bg-gray-500 transition-all duration-300"
-            >
-              Subscribe Now
-            </button>
-          </form>
-        </div>
-      </section>
+<section className="bg-[#f1f1f1] py-20">
+  <div className="container mx-auto text-center">
+    <h2 className="text-3xl font-bold text-[#89cff0] mb-4">TGT Newsletter</h2>
+    <p className="text-xl mb-8">Subscribe to our Newsletter today to stay updated with the latest technology news.</p>
+
+    <form className="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4 max-w-2xl mx-auto">
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="px-4 py-2 text-lg border border-[#89CFF0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#89CFF0] w-64"
+        required
+      />
+      <button
+        type="submit"
+        className="bg-[#89CFF0] text-white text-lg py-2 px-6 rounded-lg hover:bg-gray-500 transition-all duration-300"
+      >
+        Subscribe Now
+      </button>
+    </form>
+  </div>
+</section>
+
 
 
       <Footer />
