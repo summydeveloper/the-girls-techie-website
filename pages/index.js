@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CountUp from "react-countup";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -25,15 +26,15 @@ export default function Home() {
               The Girls Techie
             </h1>
             <p className="text-lg md:text-2xl mb-8 animate__animated animate__fadeIn animate__delay-1s">
-              We're a movement, a community on a mission to close the gender gap
+              We&apos;re a movement, a community on a mission to close the gender gap
               in STEM.....
             </p>
-            <a
+            <Link
               href="#gallery"
               className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-6 text-xl font-semibold rounded-full hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out"
             >
               Explore Our Work
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -143,16 +144,16 @@ export default function Home() {
           </p>
           {/* Highlighted Text or Key Point */}
           <p className="text-lg text-[#006B8E] font-semibold mb-8 px-6 md:px-12 italic">
-            "Empowering the next generation of female tech leaders!"
+            &quot;Empowering the next generation of female tech leaders!&quot;
           </p>
 
           {/* Call to Action Button */}
-          <a
+          <Link
             href="/about"
             className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Learn More
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -182,12 +183,12 @@ export default function Home() {
                   className="w-full h-[300px] object-cover rounded-lg shadow-md"
                 />
               </div>
-              <a
+              <Link
                 href="/community"
                 className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
               >
                 Join Now
-              </a>
+              </Link>
             </div>
 
             {/* Attend an Event Block */}
@@ -207,12 +208,12 @@ export default function Home() {
                   className="w-full h-[300px] object-cover rounded-lg shadow-md"
                 />
               </div>
-              <a
+              <Link
                 href="/events"
                 className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
               >
                 Attend Now
-              </a>
+              </Link>
             </div>
           </div>
         </div>
