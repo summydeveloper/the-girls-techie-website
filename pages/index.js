@@ -32,7 +32,7 @@ export default function Home() {
             </p>
             <Link
               href="#gallery"
-              className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-6 text-xl font-semibold rounded-full hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out"
+              className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-6 text-xl font-semibold rounded-full hover:bg-[#89cff0] hover:text-white transition-all duration-300 ease-in-out"
             >
               Explore Our Work
             </Link>
@@ -43,28 +43,28 @@ export default function Home() {
       {/* Image Gallery Section */}
       <section id="gallery" className="py-16 bg-[#f0f9ff]">
         <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold text-[#006B8E] mb-12">
+          <h2 className="text-4xl font-bold text-[#89cff0] mb-12">
             Our Impact in Pictures
           </h2>
 
           {/* Counting Animation Section */}
           <div className="flex justify-center space-x-12 mb-12">
             <div>
-              <h3 className="text-5xl font-bold text-[#006B8E]">
+              <h3 className="text-5xl font-bold text-[#89cff0]">
                 <CountUp start={0} end={600} duration={5} separator="," />
                 <span className="text-xl">+</span>
               </h3>
               <p className="text-lg text-gray-700">Impacted</p>
             </div>
             <div>
-              <h3 className="text-5xl font-bold text-[#006B8E]">
+              <h3 className="text-5xl font-bold text-[#89cff0]">
                 <CountUp start={0} end={20} duration={8} separator="," />
                 <span className="text-xl">+</span>
               </h3>
               <p className="text-lg text-gray-700">Events</p>
             </div>
             <div>
-              <h3 className="text-5xl font-bold text-[#006B8E]">
+              <h3 className="text-5xl font-bold text-[#89cff0]">
                 <CountUp start={0} end={5} duration={10} separator="," />
                 <span className="text-xl">+</span>
               </h3>
@@ -141,7 +141,7 @@ export default function Home() {
       {/* Content Section (Mission, Vision, etc.) */}
       <section className="py-16 bg-[#f1f1f1]">
         <div className="container mx-auto text-center px-6 md:px-12">
-          <h2 className="text-4xl font-extrabold text-[#004F6D] mb-6 leading-tight">
+          <h2 className="text-4xl font-extrabold text-[#89cff0] mb-6 leading-tight">
             Our Mission
           </h2>
           <p className="text-xl text-gray-700 mb-8">
@@ -152,14 +152,14 @@ export default function Home() {
             and hands-on experiences.
           </p>
           {/* Highlighted Text or Key Point */}
-          <p className="text-lg text-[#006B8E] font-semibold mb-8 px-6 md:px-12 italic">
+          <p className="text-lg text-[#89cff0] font-semibold mb-8 px-6 md:px-12 italic">
             &quot;Empowering the next generation of female tech leaders!&quot;
           </p>
 
           {/* Call to Action Button */}
           <Link
             href="/about"
-            className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
+            className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#89cff0] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
           >
             Learn More
           </Link>
@@ -169,7 +169,7 @@ export default function Home() {
       {/* Get Involved Section */}
       <section className="py-16 bg-[#f0f9ff]">
         <div className="container mx-auto text-center px-6 md:px-12">
-          <h2 className="text-4xl font-extrabold text-[#004F6D] mb-6 leading-tight">
+          <h2 className="text-4xl font-extrabold text-[#89cff0] mb-6 leading-tight">
             Get Involved
           </h2>
           
@@ -178,7 +178,7 @@ export default function Home() {
             
             {/* Join Our Community Block */}
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-3xl font-bold text-[#004F6D] mb-4">
+              <h3 className="text-3xl font-bold text-[#89cff0] mb-4">
                 Join Our Community
               </h3>
               <p className="text-xl text-[#4B4B4B] mb-6">
@@ -196,7 +196,7 @@ export default function Home() {
               </div>
               <Link
                 href="/community"
-                className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
+                className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#89cff0] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
               >
                 Join Now
               </Link>
@@ -204,7 +204,7 @@ export default function Home() {
 
             {/* Attend an Event Block */}
             <div className="bg-white rounded-lg shadow-lg p-8">
-              <h3 className="text-3xl font-bold text-[#004F6D] mb-4">
+              <h3 className="text-3xl font-bold text-[#89cff0] mb-4">
                 Attend an Event
               </h3>
               <p className="text-xl text-[#4B4B4B] mb-6">
@@ -223,7 +223,7 @@ export default function Home() {
               </div>
               <Link
                 href="/events"
-                className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#006B8E] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
+                className="inline-block bg-[#89CFF0] text-[#004F6D] py-3 px-8 text-xl font-semibold rounded-full shadow-lg hover:bg-[#89cff0] hover:text-white transition-all duration-300 ease-in-out transform hover:scale-105"
               >
                 Attend Now
               </Link>
@@ -231,6 +231,30 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+        {/* Newsletter Section */}
+        <section className="bg-[#f1f1f1] py-20">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl font-bold text-[#89cff0] -500 mb-4">TGT Newsletter</h2>
+          <p className="text-xl mb-8">Subscribe to our Newsletter today to stay updated with the latest technology news.</p>
+          
+          <form className="flex justify-center items-center space-x-4 max-w-2xl mx-auto">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="px-4 py-2 text-lg border border-[#89CFF0] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#89CFF0] w-64"
+              required
+            />
+            <button
+              type="submit"
+              className="bg-[#89CFF0] text-white text-lg py-2 px-6 rounded-lg hover:bg-gray-500 transition-all duration-300"
+            >
+              Subscribe Now
+            </button>
+          </form>
+        </div>
+      </section>
+
 
       <Footer />
     </div>
