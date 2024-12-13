@@ -168,7 +168,7 @@ export default function About() {
       Become a Volunteer
     </a>
     <a 
-      href="#donate" 
+      href="/donate" 
       className="px-6 py-3 bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
     >
       Donate Now
