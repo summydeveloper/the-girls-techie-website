@@ -27,6 +27,11 @@ const Header = () => {
               </Link>
             </li>
             <li>
+              <Link href="/about" className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
+                Events
+              </Link>
+            </li>
+            <li>
               <Link href="/donate" className="hover:text-[#004F6D] transition-all duration-200 ease-in-out">
                 Donate
               </Link>
@@ -68,6 +73,9 @@ const Header = () => {
                 </Link>
                 <Link href="/about" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
                   About Us
+                </Link>
+                <Link href="/about" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
+                  Events
                 </Link>
                 <Link href="/donate" className="text-white text-3xl font-semibold hover:text-[#004F6D]" onClick={toggleMenu}>
                   Donate
