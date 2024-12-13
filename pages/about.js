@@ -1,7 +1,7 @@
 // pages/about.js
-import Head from 'next/head';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Head from "next/head";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function About() {
   return (
@@ -15,18 +15,20 @@ export default function About() {
 
       <main className="container mx-auto px-6 py-16">
         {/* Hero Section */}
-        <section 
-  className="relative bg-cover bg-center text-white py-20 mb-16" 
-  style={{ backgroundImage: "url('/images/image.jpg')" }}
->
-  <div className="bg-black bg-opacity-50 p-8 rounded-lg max-w-4xl mx-auto text-center">
-    <h1 className="text-5xl font-bold mb-6">About Us</h1>
-    <p className="text-xl leading-relaxed">
-      The Girls Techie is a nonprofit organization empowering young girls in STEM. We connect, inspire, and provide the tools to help them lead in the tech world. Our aim is to break barriers and foster opportunities for young girls to thrive in technology.
-    </p>
-  </div>
-</section>
-
+        <section
+          className="relative bg-cover bg-center text-white py-20 mb-16"
+          style={{ backgroundImage: "url('/images/image.jpg')" }}
+        >
+          <div className="bg-black bg-opacity-50 p-8 rounded-lg max-w-4xl mx-auto text-center">
+            <h1 className="text-5xl font-bold mb-6">About Us</h1>
+            <p className="text-xl leading-relaxed">
+              The Girls Techie is a nonprofit organization empowering young
+              girls in STEM. We connect, inspire, and provide the tools to help
+              them lead in the tech world. Our aim is to break barriers and
+              foster opportunities for young girls to thrive in technology.
+            </p>
+          </div>
+        </section>
 
         {/* Mission Section */}
         <section className="mb-16   py-16">
@@ -39,7 +41,10 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our mission is to inspire, empower, and connect young girls with STEM skills to make meaningful impacts in their communities. We are breaking barriers and fostering opportunities for them to thrive in technology.
+                Our mission is to inspire, empower, and connect young girls with
+                STEM skills to make meaningful impacts in their communities. We
+                are breaking barriers and fostering opportunities for them to
+                thrive in technology.
               </p>
             </div>
           </div>
@@ -56,7 +61,9 @@ export default function About() {
                 Our Vision
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Our vision is a world where girls are leaders in the digital and tech industries, driving innovation and solving global challenges through technology.
+                Our vision is a world where girls are leaders in the digital and
+                tech industries, driving innovation and solving global
+                challenges through technology.
               </p>
             </div>
           </div>
@@ -70,22 +77,22 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                icon: '🤝',
-                title: 'Teamwork',
+                icon: "🤝",
+                title: "Teamwork",
                 description:
-                  'We believe in collaboration and support, achieving success through working together.',
+                  "We believe in collaboration and support, achieving success through working together.",
               },
               {
-                icon: '💡',
-                title: 'Innovation',
+                icon: "💡",
+                title: "Innovation",
                 description:
-                  'We foster creativity and innovation in solving problems and advancing STEM fields.',
+                  "We foster creativity and innovation in solving problems and advancing STEM fields.",
               },
               {
-                icon: '🌟',
-                title: 'Leadership',
+                icon: "🌟",
+                title: "Leadership",
                 description:
-                  'We empower young girls to build confidence and lead in STEM industries.',
+                  "We empower young girls to build confidence and lead in STEM industries.",
               },
             ].map((value, idx) => (
               <div
@@ -112,22 +119,22 @@ export default function About() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {[
               {
-                name: 'Sumayah Adegbite',
-                role: 'Founder & CEO',
-                image: '/images/image.jpg',
-                bio: 'A passionate advocate for women in tech, with a strong background in software development and mentoring.',
+                name: "Sumayah Adegbite",
+                role: "Founder & CEO",
+                image: "/images/image.jpg",
+                bio: "A passionate advocate for women in tech, with a strong background in software development and mentoring.",
               },
               {
-                name: 'Sumayah Adegbite',
-                role: 'Founder & CEO',
-                image: '/images/image.jpg',
-                bio: 'A passionate advocate for women in tech, with a strong background in software development and mentoring.',
+                name: "Sumayah Adegbite",
+                role: "Founder & CEO",
+                image: "/images/image.jpg",
+                bio: "A passionate advocate for women in tech, with a strong background in software development and mentoring.",
               },
               {
-                name: 'Sumayah Adegbite',
-                role: 'Founder & CEO',
-                image: '/images/image.jpg',
-                bio: 'A passionate advocate for women in tech, with a strong background in software development and mentoring.',
+                name: "Sumayah Adegbite",
+                role: "Founder & CEO",
+                image: "/images/image.jpg",
+                bio: "A passionate advocate for women in tech, with a strong background in software development and mentoring.",
               },
             ].map((member, idx) => (
               <div
@@ -148,6 +155,27 @@ export default function About() {
             ))}
           </div>
         </section>
+        <section className="bg-[#f1f1f1] py-16 mb-16 text-center">
+  <h2 className="text-4xl font-bold text-[#89cff0] mb-8">How You Can Help</h2>
+  <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
+    Join our mission to inspire and empower young girls in STEM. Whether you're a mentor, volunteer, or donor, your support can make a lasting impact.
+  </p>
+  <div className="flex flex-col sm:flex-row justify-center gap-6 mx-9">
+    <a 
+      href="#volunteer" 
+      className="px-6 py-3  bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
+    >
+      Become a Volunteer
+    </a>
+    <a 
+      href="#donate" 
+      className="px-6 py-3 bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
+    >
+      Donate Now
+    </a>
+  </div>
+</section>
+
       </main>
 
       <Footer />
