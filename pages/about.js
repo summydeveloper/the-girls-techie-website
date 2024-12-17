@@ -2,6 +2,7 @@
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -141,7 +142,7 @@ export default function About() {
                 key={idx}
                 className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 ease-in-out"
               >
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
@@ -156,26 +157,29 @@ export default function About() {
           </div>
         </section>
         <section className="bg-[#f1f1f1] py-16 mb-16 text-center">
-  <h2 className="text-4xl font-bold text-[#89cff0] mb-8">How You Can Help</h2>
-  <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
-    Join our mission to inspire and empower young girls in STEM. Whether you are a mentor, volunteer, or donor, your support can make a lasting impact.
-  </p>
-  <div className="flex flex-col sm:flex-row justify-center gap-6 mx-9">
-    <a 
-      href="#volunteer" 
-      className="px-6 py-3  bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
-    >
-      Become a Volunteer
-    </a>
-    <a 
-      href="/donate" 
-      className="px-6 py-3 bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
-    >
-      Donate Now
-    </a>
-  </div>
-</section>
-
+          <h2 className="text-4xl font-bold text-[#89cff0] mb-8">
+            How You Can Help
+          </h2>
+          <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
+            Join our mission to inspire and empower young girls in STEM. Whether
+            you are a mentor, volunteer, or donor, your support can make a
+            lasting impact.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mx-9">
+            <Link
+              href="#volunteer"
+              className="px-6 py-3  bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
+            >
+              Become a Volunteer
+            </Link>
+            <Link
+              href="/donate"
+              className="px-6 py-3 bg-[#89cff0] text-white rounded-lg shadow-lg hover:bg-[#3c6c8d] transition duration-300 w-full sm:w-auto text-center"
+            >
+              Donate Now
+            </Link>
+          </div>
+        </section>
       </main>
 
       <Footer />
