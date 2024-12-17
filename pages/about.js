@@ -158,7 +158,7 @@ export default function About() {
         <section className="bg-[#f1f1f1] py-16 mb-16 text-center">
   <h2 className="text-4xl font-bold text-[#89cff0] mb-8">How You Can Help</h2>
   <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-10">
-    Join our mission to inspire and empower young girls in STEM. Whether you're a mentor, volunteer, or donor, your support can make a lasting impact.
+    Join our mission to inspire and empower young girls in STEM. Whether you are a mentor, volunteer, or donor, your support can make a lasting impact.
   </p>
   <div className="flex flex-col sm:flex-row justify-center gap-6 mx-9">
     <a 
