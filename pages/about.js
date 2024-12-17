@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -144,7 +145,7 @@ export default function About() {
               >
                 <Image
                   src={member.image}
-                  alt={member.name}
+                  alt={member.name} width={100} height={100}
                   className="w-24 h-24 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h3 className="text-2xl font-semibold text-[#89cff0] mb-2">
