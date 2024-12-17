@@ -14,7 +14,7 @@ const Contact = () => {
       <Header />
 
       <main className="container mx-auto p-8">
-        <h1 className="text-3xl font-bold text-center text-teal-500 mb-4">Contact Us</h1>
+        <h1 className="text-3xl font-bold text-center text-[#89cff0] mb-4">Contact Us</h1>
         <p className="text-lg text-center mb-8">We would love to hear from you! Reach out for collaborations, volunteering, or inquiries.</p>
         <form className="max-w-xl mx-auto">
           <div className="mb-4">
@@ -31,7 +31,7 @@ const Contact = () => {
           </div>
           <button
             type="submit"
-            className="bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-700"
+            className="bg-[#89cff0] text-white py-2 px-6 rounded-md hover:bg-[#89cff0]"
           >
             Send Message
           </button>

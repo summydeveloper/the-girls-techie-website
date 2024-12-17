@@ -73,12 +73,12 @@ export default function Event() {
       <Header />
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center py-20">
+      <section className="bg-gradient-to-r from-[#89cff0] to-[#89cff1] text-white text-center py-20">
         <h1 className="text-4xl font-bold mb-4">Upcoming Event: Girls in Tech Summit</h1>
         <p className="text-lg">Empowering young girls to lead in the world of technology. Join us for an inspiring event that connects, inspires, and provides the tools for success!</p>
         <a
           href="#register"
-          className="mt-6 inline-block bg-yellow-500 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
+          className="mt-6 inline-block bg-[#89cff1] text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300"
         >
           Register Now
         </a>
@@ -212,7 +212,7 @@ export default function Event() {
           {/* Submit Button */}
           <button
             type="submit"
-            className="w-full bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-purple-500 transition duration-300"
+            className="w-full bg-[#89cff0] text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-[#89cff1] transition duration-300"
           >
             Submit Registration
           </button>

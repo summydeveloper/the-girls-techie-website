@@ -1,4 +1,3 @@
-// pages/donate.js
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -13,13 +12,15 @@ const Donate = () => {
 
       <Header />
 
-      <main className="container mx-auto p-8">
-        <h1 className="text-3xl font-bold text-center text-teal-500 mb-4">Support Our Cause</h1>
-        <p className="text-lg text-center mb-8">Your donations help us empower girls to become the next leaders in tech.</p>
-        <form className="text-center">
+      <main className="container mx-auto p-8 text-center">
+        <h1 className="text-3xl font-bold text-[#89cff0] mb-4">Support Our Cause</h1>
+        <p className="text-lg mb-6">Your donations help empower young girls to lead in the tech world. With your support, we can provide the resources they need to break barriers in STEM.</p>
+
+        {/* Simple Donate Button */}
+        <form>
           <button
             type="submit"
-            className="bg-teal-500 text-white py-2 px-6 rounded-md hover:bg-teal-700"
+            className="bg-[#89cff0] text-white py-2 px-6 rounded-md hover:bg-[#89cff0]"
           >
             Donate Now
           </button>
